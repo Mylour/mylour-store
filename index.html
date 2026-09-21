@@ -443,7 +443,7 @@ const B64_LOGO="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAAAAAAD/7QBEUGhvdG9za
       </div>
       <div class="my-detail-name eng">${p.nameEn} ${p.emoji}</div>
       <div class="my-detail-meta">
-        <span>السعر: <strong>${fmt(p.price)}</strong></span>
+        <span>السعر: <strong>${fmt(p.price)}${p.oldPrice ? `<s style="opacity:.5">${fmt(p.oldPrice)}</s> ` : ''}</strong></span>
         <span>الحجم: <strong>${p.size}</strong></span>
       </div>
       <div class="my-detail-desc">
