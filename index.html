@@ -402,7 +402,7 @@ const B64_LOGO="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAAAAAAD/7QBEUGhvdG9za
           <span class="my-card-name" data-open="${p.id}">${p.nameEn} ${p.emoji}</span>
           <span class="my-card-short">${p.shortDesc}</span>
           <div class="my-card-meta">
-            <span class="my-price">${fmt(p.price)}</span>
+            <span class="my-price">${p.oldPrice ? `<s style="opacity:.5;font-size:.85em">${fmt(p.oldPrice)}</s> ` : ''}${fmt(p.price)}</span>
             <span class="my-size">${p.size}</span>
           </div>
           <div class="my-card-actions">
